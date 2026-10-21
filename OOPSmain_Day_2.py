@@ -1,5 +1,5 @@
 import json
-#class to store the expenses and display them
+# Class to store the expenses and display them
 class Expense:
     def __init__(self,amount,category,description):
         self.amount = amount
