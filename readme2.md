@@ -25,4 +25,3 @@ Restructured the procedural codebase into an Object-Oriented Programming (OOP) a
 - [x] Basic Python Control Flow & Functions
 - [x] Exception & Error Handling (`try-except`)
 - [x] Object-Oriented Programming (Classes, Objects, Methods)
-- [ ] File Handling (Saving/Loading data)
