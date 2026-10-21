@@ -1,17 +1,27 @@
-This Project is for learning and strengthening my Knowledge of Python concepts such as OOPS, file handling, and exception handling.
-I will update this repo daily with my learnings
+# Python Learning Project: Expense Tracker
 
-### DAY-1:
-I made a main base with some basic functions, with an understanding of how it works and how the flow of my code will be. 
-1) made some functions: add_expense(), show_expense(), calculate_total().
-2) Used the concept of exception handling (try and except block) to handle errors and manage the code where needed, so it does not crash due to errors.
-3) Made the program user-interactive with a while loop and choices to do different tasks.
+This repository is dedicated to learning and strengthening my knowledge of core Python concepts, specifically **Object-Oriented Programming (OOP)**, **file handling**, and **exception handling**. I am updating this repository daily to document my progress and learnings.
 
-### DAY-2:
-Continuing the progress:-
-1) Converted the base into classes and object format, and structured it more accurately.
-2) Made 2 classes: Expense and ExpenseTracker.
-   Expense: To store expenses (amount, category, and description)
-   ExpenseTracker: To add, show, and calculate the total (through the class methods)
-3) Made objects of both classes and added some expenses, justified the show_expenses method, and calculated the total amount.
+---
 
+## 🚀 Daily Progress Log
+
+### Day 1: Project Base & Core Logic
+Built the initial foundational script, establishing the core mechanics and code execution flow.
+* **Core Functions:** Implemented `add_expense()`, `show_expense()`, and `calculate_total()`.
+* **Exception Handling:** Utilized `try` and `except` blocks to safely handle runtime errors and invalid user inputs, preventing application crashes.
+* **Interactive CLI:** Built a user-interactive terminal menu using a `while` loop allowing continuous task selection.
+
+### Day 2: Object-Oriented Refactoring
+Restructured the procedural codebase into an Object-Oriented Programming (OOP) architecture for better structure and scalability.
+* **Class Design:** Replaced standalone functions with dedicated classes and methods.
+* **`Expense` Class:** Encapsulates individual expense data (storing `amount`, `category`, and `description`).
+* **`ExpenseTracker` Class:** Handles tracker operations, offering methods to add expenses, display logged data, and compute total expenditure.
+* **Verification:** Instantiated class objects, added test entries, validated the display formatting, and confirmed total calculations.
+
+---
+
+## 🛠️ Concepts Practiced
+- [x] Basic Python Control Flow & Functions
+- [x] Exception & Error Handling (`try-except`)
+- [x] Object-Oriented Programming (Classes, Objects, Methods)
