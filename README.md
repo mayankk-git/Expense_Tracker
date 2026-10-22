@@ -21,7 +21,28 @@ Restructured the procedural codebase into an Object-Oriented Programming (OOP) a
 
 ---
 
+### DAY-3: JSON File Handling & CLI Integration
+
+When working with Python, data stored in variables or class instances only exists in volatile memory (RAM)—meaning it disappears as soon as the program terminates. To make data persistent, it must be written to disk. JSON (JavaScript Object Notation) is one of the most popular lightweight formats for doing this.
+
+Integrated persistent storage using JSON and streamlined user interaction through an expanded Command Line Interface (CLI).
+
+
+1. **Implemented Data Persistence:** Integrated Python's built-in `json` module (`import json`) to store expense records persistently on disk.
+2. **Added Storage Logic:** Created a new `save_expenses()` method utilizing `json.dump()` to serialize and save expense objects into a structured JSON file format.
+3. **Enhanced Interactive CLI:** Updated the terminal menu system to seamlessly interact with all tracker features:
+* `add_expense()` – Log new expenses
+* `show_expenses()` – Display all recorded expenses
+* `calculate_total()` – Sum up total spending
+* `save_expenses()` – Save current data to the JSON file
+
+---
+
+
+
 ## 🛠️ Concepts Practiced
 - [x] Basic Python Control Flow & Functions
 - [x] Exception & Error Handling (`try-except`)
-- [x] Object-Oriented Programming (Classes, Objects, Methods)
+- [x] Object-Oriented Programming (Classes, Objects, Methods
+- [x] File handling with JSON module to store Python data (dump)
+ 
