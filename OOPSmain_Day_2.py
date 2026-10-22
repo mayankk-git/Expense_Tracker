@@ -15,7 +15,7 @@ class ExpenseTracker:
                
     def add_expense(self, expense):
         self.expenses.append(expense)
-        self.save_expenses()
+        
         
     def show_expenses(self):
         if not self.expenses:
