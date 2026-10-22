@@ -19,8 +19,6 @@ Restructured the procedural codebase into an Object-Oriented Programming (OOP) a
 * **`ExpenseTracker` Class:** Handles tracker operations, offering methods to add expenses, display logged data, and compute total expenditure.
 * **Verification:** Instantiated class objects, added test entries, validated the display formatting, and confirmed total calculations.
 
----
-
 ### DAY-3: JSON File Handling & CLI Integration
 
 When working with Python, data stored in variables or class instances only exists in volatile memory (RAM)—meaning it disappears as soon as the program terminates. To make data persistent, it must be written to disk. JSON (JavaScript Object Notation) is one of the most popular lightweight formats for doing this.
