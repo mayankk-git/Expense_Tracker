@@ -8,16 +8,16 @@ This repository is dedicated to learning and strengthening my knowledge of core 
 
 ### Day 1: Project Base & Core Logic
 Built the initial foundational script, establishing the core mechanics and code execution flow.
-* **Core Functions:** Implemented `add_expense()`, `show_expense()`, and `calculate_total()`.
-* **Exception Handling:** Utilized `try` and `except` blocks to safely handle runtime errors and invalid user inputs, preventing application crashes.
-* **Interactive CLI:** Built a user-interactive terminal menu using a `while` loop allowing continuous task selection.
+1. **Core Functions:** Implemented `add_expense()`, `show_expense()`, and `calculate_total()`.
+2. **Exception Handling:** Utilized `try` and `except` blocks to safely handle runtime errors and invalid user inputs, preventing application crashes.
+3. **Interactive CLI:** Built a user-interactive terminal menu using a `while` loop allowing continuous task selection.
 
 ### Day 2: Object-Oriented Refactoring
 Restructured the procedural codebase into an Object-Oriented Programming (OOP) architecture for better structure and scalability.
-* **Class Design:** Replaced standalone functions with dedicated classes and methods.
-* **`Expense` Class:** Encapsulates individual expense data (storing `amount`, `category`, and `description`).
-* **`ExpenseTracker` Class:** Handles tracker operations, offering methods to add expenses, display logged data, and compute total expenditure.
-* **Verification:** Instantiated class objects, added test entries, validated the display formatting, and confirmed total calculations.
+1. **Class Design:** Replaced standalone functions with dedicated classes and methods.
+2. **`Expense` Class:** Encapsulates individual expense data (storing `amount`, `category`, and `description`).
+3. **`ExpenseTracker` Class:** Handles tracker operations, offering methods to add expenses, display logged data, and compute total expenditure.
+4. **Verification:** Instantiated class objects, added test entries, validated the display formatting, and confirmed total calculations.
 
 ### DAY-3: JSON File Handling & CLI Integration
 
@@ -34,6 +34,17 @@ Integrated persistent storage using JSON and streamlined user interaction throug
 * `calculate_total()` – Sum up total spending
 * `save_expenses()` – Save current data to the JSON file
 
+
+### DAY-4: JSON File Handling, Data Persistence & Feature Expansion
+Implemented full read/write persistence using JSON and expanded the tracker's functionality with category filtering, item deletion, and indexed viewing.
+
+1. **Automatic Data Saving:** Integrated `save_expenses()` directly into `add_expense()` so new entries are automatically written to disk without requiring explicit manual saving.
+2. **Persistent Data Loading:** Implemented `load_expenses()` to deserialize JSON data back into Python lists upon startup. This prevents `save_expenses()` from overwriting pre-existing data on new entries.
+3. **Robust Error Handling:** Wrapped file operations in `try` and `except` blocks to handle missing files (`FileNotFoundError`), corrupted files, and JSON decoding errors gracefully.
+4. **Category Filtering:** Added `filter_category()` to isolate expenses by specific categories and calculate the cumulative total spent within that category.
+5. **Item Deletion:** Added `delete_expense()` to allow users to remove specific entries from memory and sync the update back to the JSON file.
+6. **Indexed Output:** Upgraded `show_expenses()` to output enumerated indices alongside entries, enabling accurate selection for deletion and filtering.
+
 ---
 
 
@@ -41,6 +52,7 @@ Integrated persistent storage using JSON and streamlined user interaction throug
 ## 🛠️ Concepts Practiced
 - [x] Basic Python Control Flow & Functions
 - [x] Exception & Error Handling (`try-except`)
-- [x] Object-Oriented Programming (Classes, Objects, Methods
+- [x] Object-Oriented Programming (Classes, Objects, Methods)
 - [x] File handling with JSON module to store Python data (dump)
+- [x] File handling with JSON module to retrieve json data (load)
  
