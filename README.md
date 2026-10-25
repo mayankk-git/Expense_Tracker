@@ -45,6 +45,15 @@ Implemented full read/write persistence using JSON and expanded the tracker's fu
 5. **Item Deletion:** Added `delete_expense()` to allow users to remove specific entries from memory and sync the update back to the JSON file.
 6. **Indexed Output:** Upgraded `show_expenses()` to output enumerated indices alongside entries, enabling accurate selection for deletion and filtering.
 
+
+### Day 5: Input Validation Helpers, Index-Based Editing & Spending Analytics
+
+Enhanced input robustness, enabled modifications of existing logs, and added automated spending analytics.
+1. **Numeric Input Validation:** Created input helper functions to validate numeric inputs, ensuring expense amounts are positive values greater than zero and handling invalid inputs gracefully.
+2. **String Input Validation:** Implemented category and description helpers to ensure user inputs are valid non-empty strings and not just empty spaces/whitespaces.
+3. **Expense Editing (`edit_expense()`):** Added an `edit_expense()` method to the `ExpenseTracker` class allowing users to update specific expenses directly at the index level.
+4. **Category Spending Summary:** Built a summary analysis method to calculate total expenditure breakdown per category and highlight the highest spending category automatically.
+
 ---
 
 
@@ -55,4 +64,5 @@ Implemented full read/write persistence using JSON and expanded the tracker's fu
 - [x] Object-Oriented Programming (Classes, Objects, Methods)
 - [x] File handling with JSON module to store Python data (dump)
 - [x] File handling with JSON module to retrieve json data (load)
+- [x] Input validation and code reusability
  
