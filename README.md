@@ -46,7 +46,7 @@ Implemented full read/write persistence using JSON and expanded the tracker's fu
 6. **Indexed Output:** Upgraded `show_expenses()` to output enumerated indices alongside entries, enabling accurate selection for deletion and filtering.
 
 
-### Day 5: Input Validation Helpers, Index-Based Editing & Spending Analytics
+### DAY 5: Input Validation Helpers, Index-Based Editing & Spending Analytics
 
 Enhanced input robustness, enabled modifications of existing logs, and added automated spending analytics.
 1. **Numeric Input Validation:** Created input helper functions to validate numeric inputs, ensuring expense amounts are positive values greater than zero and handling invalid inputs gracefully.
@@ -54,7 +54,7 @@ Enhanced input robustness, enabled modifications of existing logs, and added aut
 3. **Expense Editing (`edit_expense()`):** Added an `edit_expense()` method to the `ExpenseTracker` class allowing users to update specific expenses directly at the index level.
 4. **Category Spending Summary:** Built a summary analysis method to calculate total expenditure breakdown per category and highlight the highest spending category automatically.
 
-### Day 6: Analytics Dashboard & Advanced Fault-Tolerant File Handling
+### DAY 6: Analytics Dashboard & Advanced Fault-Tolerant File Handling
 Added a comprehensive analytics dashboard and significantly reinforced file operations to prevent application crashes and data corruption.
 1. **Interactive Analytics Dashboard (`show_dashboard()`):**
    * Displays key financial metrics: Total Spending, Total Expense Count, and Average Expense Cost.
