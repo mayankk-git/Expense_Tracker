@@ -19,7 +19,7 @@ Restructured the procedural codebase into an Object-Oriented Programming (OOP) a
 3. **`ExpenseTracker` Class:** Handles tracker operations, offering methods to add expenses, display logged data, and compute total expenditure.
 4. **Verification:** Instantiated class objects, added test entries, validated the display formatting, and confirmed total calculations.
 
-### DAY-3: JSON File Handling & CLI Integration
+### DAY 3: JSON File Handling & CLI Integration
 
 When working with Python, data stored in variables or class instances only exists in volatile memory (RAM)—meaning it disappears as soon as the program terminates. To make data persistent, it must be written to disk. JSON (JavaScript Object Notation) is one of the most popular lightweight formats for doing this.
 
@@ -35,7 +35,7 @@ Integrated persistent storage using JSON and streamlined user interaction throug
 * `save_expenses()` – Save current data to the JSON file
 
 
-### DAY-4: JSON File Handling, Data Persistence & Feature Expansion
+### DAY 4: JSON File Handling, Data Persistence & Feature Expansion
 Implemented full read/write persistence using JSON and expanded the tracker's functionality with category filtering, item deletion, and indexed viewing.
 
 1. **Automatic Data Saving:** Integrated `save_expenses()` directly into `add_expense()` so new entries are automatically written to disk without requiring explicit manual saving.
