@@ -54,6 +54,13 @@ Enhanced input robustness, enabled modifications of existing logs, and added aut
 3. **Expense Editing (`edit_expense()`):** Added an `edit_expense()` method to the `ExpenseTracker` class allowing users to update specific expenses directly at the index level.
 4. **Category Spending Summary:** Built a summary analysis method to calculate total expenditure breakdown per category and highlight the highest spending category automatically.
 
+### Day 6: Analytics Dashboard & Advanced Fault-Tolerant File Handling
+Added a comprehensive analytics dashboard and significantly reinforced file operations to prevent application crashes and data corruption.
+1. **Interactive Analytics Dashboard (`show_dashboard()`):**
+   * Displays key financial metrics: Total Spending, Total Expense Count, and Average Expense Cost.
+   * Integrates `category_summary()` to automatically show category-wise spending breakdowns and highlight the top spending category.
+2. **Fault-Tolerant Saving Logic:** Fortified `save_expenses()` with defensive exception handling to ensure disk writing operations do not break code flow upon encountering unexpected errors.
+3. **Advanced Fail-Safe Loading:** Overhauled `load_expenses()` to handle all potential exceptions during data load, including `JSONDecodeError`, syntax issues, missing keys, and invalid/tampered data types, ensuring corrupted external JSON files do not crash the code or import compromised data structures.
 ---
 
 
@@ -65,4 +72,6 @@ Enhanced input robustness, enabled modifications of existing logs, and added aut
 - [x] File handling with JSON module to store Python data (dump)
 - [x] File handling with JSON module to retrieve json data (load)
 - [x] Input validation and code reusability
+- [x] Advanced exception handling with JSON files.
+   
  
