@@ -61,6 +61,8 @@ Added a comprehensive analytics dashboard and significantly reinforced file oper
    * Integrates `category_summary()` to automatically show category-wise spending breakdowns and highlight the top spending category.
 2. **Fault-Tolerant Saving Logic:** Fortified `save_expenses()` with defensive exception handling to ensure disk writing operations do not break code flow upon encountering unexpected errors.
 3. **Advanced Fail-Safe Loading:** Overhauled `load_expenses()` to handle all potential exceptions during data load, including `JSONDecodeError`, syntax issues, missing keys, and invalid/tampered data types, ensuring corrupted external JSON files do not crash the code or import compromised data structures.
+
+### DAY 8: Adding dates and monthwise summary 
 ---
 
 
