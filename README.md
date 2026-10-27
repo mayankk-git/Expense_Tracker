@@ -62,7 +62,20 @@ Added a comprehensive analytics dashboard and significantly reinforced file oper
 2. **Fault-Tolerant Saving Logic:** Fortified `save_expenses()` with defensive exception handling to ensure disk writing operations do not break code flow upon encountering unexpected errors.
 3. **Advanced Fail-Safe Loading:** Overhauled `load_expenses()` to handle all potential exceptions during data load, including `JSONDecodeError`, syntax issues, missing keys, and invalid/tampered data types, ensuring corrupted external JSON files do not crash the code or import compromised data structures.
 
-### DAY 8: Adding dates and monthwise summary 
+
+### Day 7: Date Tracking, Monthly Summaries & Budget Management
+
+Upgraded data structures to track time-based metrics and implemented complete monthly budget management with persistent JSON storage.
+1. **Date Parameter Integration:** Enhanced expense records to incorporate transaction dates, defaulting automatically to today's date for new entries while preserving historical dates during JSON loads.
+2. **Monthly Budget Storage Structure:** Initialized a `self.budgets` dictionary within the `ExpenseTracker` constructor to organize and store monthly budgeting limits.
+3. **Monthly Spending Summary:** Developed a `monthly_summary()` method to compute and display total spending for any specific month.
+4. **Budget Setting System:** Created `set_monthly_budget()` to allow users to configure custom budget targets per month.
+5. **Budget Persistence:** Implemented `save_budgets()` and `load_budgets()` to serialize and deserialize budget data to/from JSON, ensuring settings persist across application restarts.
+6. **Budget Overview (`check_monthly_budget()`):** Built a comprehensive budget evaluation view that displays:
+   * Configured Monthly Budget
+   * Total Spent in the Month
+   * Remaining Budget Allowance
+   * Percentage of Budget Used
 ---
 
 
@@ -75,5 +88,6 @@ Added a comprehensive analytics dashboard and significantly reinforced file oper
 - [x] File handling with JSON module to retrieve json data (load)
 - [x] Input validation and code reusability
 - [x] Advanced exception handling with JSON files.
+- [x] Datetime Module.
    
  
