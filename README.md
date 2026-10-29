@@ -3,7 +3,7 @@
 This repository is dedicated to learning and strengthening my knowledge of core Python concepts, specifically **Object-Oriented Programming (OOP)**, **file handling**, and **exception handling**. I am updating this repository daily to document my progress and learnings.
 
 ---
-
+## After day 7, All the future code updations will be done in MAIN.py 
 ## 🚀 Daily Progress Log
 
 ### Day 1: Project Base & Core Logic
@@ -76,6 +76,16 @@ Upgraded data structures to track time-based metrics and implemented complete mo
    * Total Spent in the Month
    * Remaining Budget Allowance
    * Percentage of Budget Used
+
+### Day 8: Budget Validation, Helper Modularization & Schema Safety
+
+Refactored budget management logic to enforce strict validation rules and ensure reusable code modularity.
+
+1. **Modular Helper `valid_budget()`:** Introduced a reusable helper method to validate budget data parameters across different operations, enforcing DRY (Don't Repeat Yourself) principles.
+
+2. **Validated Budget Creation:** Refactored `set_monthly_budget()` to utilize `valid_budget()`, ensuring only valid year, month, and non-negative target amounts can be saved to the tracker.
+
+3. **Fault-Tolerant Budget Loading:** Upgraded `load_budgets()` with validation checks to safely verify structure, data types, and values loaded from JSON files before injecting them into runtime memory.
 ---
 
 
