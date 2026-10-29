@@ -3,7 +3,7 @@
 This repository is dedicated to learning and strengthening my knowledge of core Python concepts, specifically **Object-Oriented Programming (OOP)**, **file handling**, and **exception handling**. I am updating this repository daily to document my progress and learnings.
 
 ---
-## After day 7, All the future code updations will be done in MAIN.py 
+#### After day 7, All the future code updations will be done in MAIN.py 
 ## 🚀 Daily Progress Log
 
 ### Day 1: Project Base & Core Logic
